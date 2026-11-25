@@ -1,0 +1,43 @@
+{
+  "planning_date": "2026-10-06",
+  "seed": 20261006,
+  "script_sha256": "6afe54015433768d6953ea03c0b9da2d7aa260bcf49dac76cd538c3b349b1bc5",
+  "python": "3.13.15",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "scenarios": 384,
+  "simulated_experiments": 1632000,
+  "elapsed_seconds": 258.41951179970056,
+  "coupling_weights": {
+    "weaker_pairing": [
+      0.1,
+      0.35,
+      0.0,
+      0.55
+    ],
+    "stronger_pairing": [
+      0.5,
+      0.25,
+      0.25,
+      0.0
+    ]
+  },
+  "generator_validation": {
+    "empirical": {
+      "mean_success": 0.5003916666666667,
+      "repeat_correlation": 0.5995336741297181,
+      "paired_language_correlation": 0.4514994022123846,
+      "task_difference_variance": 0.10738380303251968
+    },
+    "expected": {
+      "mean_success": 0.5,
+      "repeat_correlation": 0.6,
+      "paired_language_correlation": 0.44999999999999996,
+      "task_difference_variance": 0.10833333333333335
+    },
+    "independent_validation_tasks": 60000
+  },
+  "definition": "Target power is the Holm-adjusted rejection rate for language 1, not probability of any significant comparison.",
+  "no_actual_model_outputs_used": true,
+  "common_random_numbers": "Within each generator group, probability/effect/missingness scenarios share pseudorandom uniforms. Each scenario has independent simulated experiments; scenarios are not independent of one another."
+}
